@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import '../App.css'
 
 
-const CardColor = ({propColor}) => {
+const CardColor = ({propColor, borrarColor}) => {
     return (
         <>
         <Card className='sombra text-end my-3' style={{ width: '15rem' }}>
@@ -14,7 +14,7 @@ const CardColor = ({propColor}) => {
             </div>
         </Card.Body>
         <Card.Footer>
-            <Button className='sombra' variant="danger">Borrar</Button>
+            <Button className='sombra' variant="danger" onClick={()=>borrarColor(propColor)}>Borrar</Button>
         </Card.Footer>
     </Card>
         </>

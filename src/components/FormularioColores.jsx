@@ -19,6 +19,10 @@ const FormularioColores = () => {
         setColor('');
     };
 
+    const borrarColor = (nombreColor) =>{
+        let copiaColor = listaColores.filter((itemColor)=> itemColor !== nombreColor);
+        setListaColores(copiaColor);
+    }
 
     return (
         <>
@@ -35,7 +39,7 @@ const FormularioColores = () => {
             <Button className='mx-3 mt-1 mb-4' variant="primary" type="submit">Guardar</Button>            
         </Form>
         </section>
-        <ListaColores listaColores={listaColores}></ListaColores>
+        <ListaColores listaColores={listaColores} borrarColor={borrarColor}></ListaColores>
     </>
     );
 };

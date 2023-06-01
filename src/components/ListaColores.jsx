@@ -1,11 +1,11 @@
 import CardColor from "./CardColor";
 
 
-const ListaColores = ({listaColores}) => {
+const ListaColores = ({listaColores, borrarColor}) => {
     return (
-        <section className="d-flex justify-content-between flex-wrap my-5">
+        <section className="d-flex justify-content-around flex-wrap my-5">
         {
-                listaColores.map((color, indiceColor)=><CardColor propColor={color} key={indiceColor}></CardColor>)
+                listaColores.map((color, indiceColor)=><CardColor propColor={color} key={indiceColor} borrarColor={borrarColor}></CardColor>)
             }
         </section>
     );
