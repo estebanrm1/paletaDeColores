@@ -36,7 +36,7 @@ const FormularioColores = () => {
                 <Form.Control type="text" placeholder="Ingrese un color ej. Red" onChange={(e)=> setColor(e.target.value)} value={color} />    
             </Form.Group>
             </span>
-            <Button className='mx-3 mt-1 mb-4' variant="primary" type="submit">Guardar</Button>            
+            <Button className='mx-3 mt-1 mb-4 sombra' variant="primary" type="submit">Guardar</Button>            
         </Form>
         </section>
         <ListaColores listaColores={listaColores} borrarColor={borrarColor}></ListaColores>
