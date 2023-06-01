@@ -6,15 +6,15 @@ import '../App.css'
 const CardColor = ({propColor}) => {
     return (
         <>
-        <Card style={{ width: '15rem' }}>
-        <Card.Header>{propColor}
+        <Card className='sombra text-end my-3' style={{ width: '15rem' }}>
+        <Card.Header className='text-start'>{propColor}
         </Card.Header>
         <Card.Body className='d-flex justify-content-center bg-secondary'>
         <div className='card-img' style={{backgroundColor: propColor}}>
             </div>
         </Card.Body>
         <Card.Footer>
-            <Button variant="danger">Borrar</Button>
+            <Button className='sombra' variant="danger">Borrar</Button>
         </Card.Footer>
     </Card>
         </>
