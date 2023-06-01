@@ -1,4 +1,5 @@
 # Trabajo Practico React en RollingCode📚💻
+
 ## Paleta de colores🎨
 
 
